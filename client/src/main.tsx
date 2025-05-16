@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-import App from "./App.tsx";
+import App from "./App.jsx";
 
 const colors = {
   brand: {},

@@ -35,8 +35,12 @@ if (process.env.NODE_ENV === "production") {
   app.use(verifyToken);
 }
 
-app.use("/", sampleRouter); // TODO: delete sample endpoint
-app.use("/users", usersRouter);
+// app.use("/", sampleRouter); // TODO: delete sample endpoint
+// app.use("/users", usersRouter);
+
+app.get('/test', (req, res) => {
+  res.send('Hello world');
+});
 
 app.listen(SERVER_PORT, () => {
   console.info(`Server listening on ${SERVER_PORT}`);
